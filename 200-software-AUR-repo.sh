@@ -1,17 +1,6 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
-# Author    : Erik Dubois
-# Website   : https://www.erikdubois.be
-# Website   : https://www.alci.online
-# Website   : https://www.ariser.eu
-# Website   : https://www.arcolinux.info
-# Website   : https://www.arcolinux.com
-# Website   : https://www.arcolinuxd.com
-# Website   : https://www.arcolinuxb.com
-# Website   : https://www.arcolinuxiso.com
-# Website   : https://www.arcolinuxforum.com
-##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
@@ -47,12 +36,13 @@ if [ $result = "none" ];then
 	echo
 	tput setaf 2
 	echo "################################################################"
-	echo "####### Installing VirtualBox"
+	echo "####### Installing qemu"
 	echo "################################################################"
 	tput sgr0
 	echo	
 
-	sh AUR/install-virtualbox-for-linux-v2.sh	
+	# sh AUR/install-virtualbox-for-linux-v2.sh
+	sh AUR/install-qemu-v1.sh
 
 else
 
@@ -60,7 +50,7 @@ else
 	echo
 	tput setaf 2
 	echo "################################################################"
-	echo "### You are on a virtual machine - skipping VirtualBox"
+	echo "### You are on a virtual machine - skipping qemu"
 	echo "################################################################"
 	tput sgr0
 	echo
