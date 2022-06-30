@@ -1,17 +1,6 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
-# Author    : Erik Dubois
-# Website   : https://www.erikdubois.be
-# Website   : https://www.alci.online
-# Website   : https://www.ariser.eu
-# Website   : https://www.arcolinux.info
-# Website   : https://www.arcolinux.com
-# Website   : https://www.arcolinuxd.com
-# Website   : https://www.arcolinuxb.com
-# Website   : https://www.arcolinuxiso.com
-# Website   : https://www.arcolinuxforum.com
-##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
@@ -38,26 +27,27 @@ echo
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
+
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
-sudo pacman -S --noconfirm --needed alacritty
-sudo pacman -S --noconfirm --needed alacritty-themes
+# sudo pacman -S --noconfirm --needed alacritty
+# sudo pacman -S --noconfirm --needed alacritty-themes
 sudo pacman -S --noconfirm --needed arandr
-sudo pacman -S --noconfirm --needed arc-darkest-theme-git
-sudo pacman -S --noconfirm --needed arc-gtk-theme
-sudo pacman -S --noconfirm --needed archiso
+# sudo pacman -S --noconfirm --needed arc-darkest-theme-git
+# sudo pacman -S --noconfirm --needed arc-gtk-theme
+# sudo pacman -S --noconfirm --needed archiso
 sudo pacman -S --noconfirm --needed asciinema
 sudo pacman -S --noconfirm --needed avahi
 sudo pacman -S --noconfirm --needed awesome-terminal-fonts
-sudo pacman -S --noconfirm --needed ayu-theme
+# sudo pacman -S --noconfirm --needed ayu-theme
 sudo pacman -S --noconfirm --needed baobab
-sudo pacman -S --noconfirm --needed base16-alacritty-git
+# sudo pacman -S --noconfirm --needed base16-alacritty-git
 sudo pacman -S --noconfirm --needed bash-completion
 sudo pacman -S --noconfirm --needed bat
 sudo pacman -S --noconfirm --needed bibata-cursor-theme-bin
 sudo pacman -S --noconfirm --needed catfish
 sudo pacman -S --noconfirm --needed chromium
-sudo pacman -S --noconfirm --needed cpuid
+# sudo pacman -S --noconfirm --needed cpuid
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed discord
 sudo pacman -S --noconfirm --needed dmenu
@@ -69,7 +59,7 @@ sudo pacman -S --noconfirm --needed evince
 sudo pacman -S --noconfirm --needed expac
 sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
-sudo pacman -S --noconfirm --needed firefox
+# sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed flameshot-git
 sudo pacman -S --noconfirm --needed font-manager
@@ -77,21 +67,21 @@ sudo pacman -S --noconfirm --needed galculator
 sudo pacman -S --noconfirm --needed gimp
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed gitahead-bin
-sudo pacman -S --noconfirm --needed gitfiend
+# sudo pacman -S --noconfirm --needed gitfiend
 sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed gparted
 sudo pacman -S --noconfirm --needed grub-customizer
 sudo pacman -S --noconfirm --needed gtop
 sudo pacman -S --noconfirm --needed gvfs-smb
 sudo pacman -S --noconfirm --needed hardcode-fixer-git
-sudo pacman -S --noconfirm --needed hardinfo-gtk3
+# sudo pacman -S --noconfirm --needed hardinfo-gtk3
 sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed hw-probe
 sudo pacman -S --noconfirm --needed inkscape
-sudo pacman -S --noconfirm --needed insync
+# sudo pacman -S --noconfirm --needed insync
 sudo pacman -S --noconfirm --needed kvantum
-sudo pacman -S --noconfirm --needed linux-firmware-qlogic
+# sudo pacman -S --noconfirm --needed linux-firmware-qlogic
 sudo pacman -S --noconfirm --needed logrotate
 sudo pacman -S --noconfirm --needed lolcat
 sudo pacman -S --noconfirm --needed lshw
@@ -117,20 +107,20 @@ sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed pv
-sudo pacman -S --noconfirm --needed qbittorrent
+# sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed rate-mirrors-bin
 sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed scrot
 sudo pacman -S --noconfirm --needed simplescreenrecorder
-sudo pacman -S --noconfirm --needed sparklines-git
+# sudo pacman -S --noconfirm --needed sparklines-git
 sudo pacman -S --noconfirm --needed speedtest-cli-git
 sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
-sudo pacman -S --noconfirm --needed sublime-text-4
+# sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed surfn-icons-git
 sudo pacman -S --noconfirm --needed system-config-printer
-sudo pacman -S --noconfirm --needed telegram-desktop
+# sudo pacman -S --noconfirm --needed telegram-desktop
 sudo pacman -S --noconfirm --needed the_platinum_searcher-bin
 sudo pacman -S --noconfirm --needed the_silver_searcher
 sudo pacman -S --noconfirm --needed time
@@ -146,9 +136,9 @@ sudo pacman -S --noconfirm --needed ttf-roboto-mono
 sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
 sudo pacman -S --noconfirm --needed upd72020x-fw
 sudo pacman -S --noconfirm --needed variety
-sudo pacman -S --noconfirm --needed vivaldi
-sudo pacman -S --noconfirm --needed vivaldi-ffmpeg-codecs
-sudo pacman -S --noconfirm --needed vivaldi-widevine
+# sudo pacman -S --noconfirm --needed vivaldi
+# sudo pacman -S --noconfirm --needed vivaldi-ffmpeg-codecs
+# sudo pacman -S --noconfirm --needed vivaldi-widevine
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 sudo pacman -S --noconfirm --needed wget
@@ -180,9 +170,9 @@ sudo pacman -S --noconfirm --needed sane
 sudo pacman -S --noconfirm --needed simple-scan
 
 sudo pacman -S --noconfirm --needed rxvt-unicode
-sudo pacman -S --noconfirm --needed urxvt-fullscreen
-sudo pacman -S --noconfirm --needed urxvt-perls
-sudo pacman -S --noconfirm --needed urxvt-resize-font-git
+# sudo pacman -S --noconfirm --needed urxvt-fullscreen
+# sudo pacman -S --noconfirm --needed urxvt-perls
+# sudo pacman -S --noconfirm --needed urxvt-resize-font-git
 
 sudo pacman -S --noconfirm --needed gzip
 sudo pacman -S --noconfirm --needed p7zip

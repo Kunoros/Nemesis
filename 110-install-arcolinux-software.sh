@@ -1,17 +1,6 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
-# Author    : Erik Dubois
-# Website   : https://www.erikdubois.be
-# Website   : https://www.alci.online
-# Website   : https://www.ariser.eu
-# Website   : https://www.arcolinux.info
-# Website   : https://www.arcolinux.com
-# Website   : https://www.arcolinuxd.com
-# Website   : https://www.arcolinuxb.com
-# Website   : https://www.arcolinuxiso.com
-# Website   : https://www.arcolinuxforum.com
-##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
@@ -59,12 +48,12 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
 fi
 
 sudo pacman -S --noconfirm --needed appstream
-sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
+# sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
 sudo pacman -S --noconfirm --needed arcolinux-hblock-git
 sudo pacman -S --noconfirm --needed archlinux-logout-git
 sudo pacman -S --noconfirm --needed arcolinux-pamac-all
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
-sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
+# sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
 
 sudo pacman -S --noconfirm --needed visual-studio-code-bin
 
