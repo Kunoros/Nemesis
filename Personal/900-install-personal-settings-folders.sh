@@ -38,62 +38,70 @@ echo
 [ -d $HOME"/.config/fish" ] || mkdir -p $HOME"/.config/fish"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
 [ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
+[ -d $HOME"/Insync" ] || mkdir -p $HOME"/Share"
 echo
-echo "Installing all shell files"
+echo "Installing dotfiles repo"
 echo
-cp $installed_dir/settings/shell-personal/.bashrc-personal ~
-cp $installed_dir/settings/shell-personal/.zshrc ~
-cp $installed_dir/settings/shell-personal/.zshrc-personal ~
-cp $installed_dir/settings/fish/alias.fish ~/.config/fish/alias.fish
-echo
-echo "Installing personal settings of variety"
-echo
-[ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
-cp $installed_dir/settings/variety/variety.conf ~/.config/variety/
-echo
-echo "Installing screenkey for teaching"
-echo
-cp $installed_dir/settings/screenkey/screenkey.json ~/.config/
-echo
-echo "Adding personal looks to /personal"
-echo
-sudo cp -arf ../Personal-iso/personal-iso/* /personal
-echo
-echo "Adding personal thunar to .config/thunar"
-echo
-[ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
-cp  settings/thunar/uca.xml $HOME/.config/Thunar
-echo
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git tmpdotfiles
+rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+# git clone --separate-git-dir=$HOME/
+# echo
+# echo "Installing all shell files"
+# echo
+# cp $installed_dir/settings/shell-personal/.bashrc-personal ~
+# cp $installed_dir/settings/shell-personal/.zshrc ~
+# cp $installed_dir/settings/shell-personal/.zshrc-personal ~
+# cp $installed_dir/settings/fish/alias.fish ~/.config/fish/alias.fish
+# echo
+# echo "Installing personal settings of variety"
+# echo
+# [ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
+# cp $installed_dir/settings/variety/variety.conf ~/.config/variety/
+# echo
+# echo "Installing screenkey for teaching"
+# echo
+# cp $installed_dir/settings/screenkey/screenkey.json ~/.config/
+# echo
+# echo "Adding personal looks to /personal"
+# echo
+# sudo cp -arf ../Personal-iso/personal-iso/* /personal
+# echo
+# echo "Adding personal thunar to .config/thunar"
+# echo
+# [ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
+# cp  settings/thunar/uca.xml $HOME/.config/Thunar
+# echo
 
-result=$(systemd-detect-virt)
+# result=$(systemd-detect-virt)
 
-if [ $result = "none" ];then
+# if [ $result = "none" ];then
 
-	echo
-	tput setaf 2
-	echo "################################################################"
-	echo "####### Copy paste virtual box template"
-	echo "################################################################"
-	tput sgr0
-	echo	
+# 	echo
+# 	tput setaf 2
+# 	echo "################################################################"
+# 	echo "####### Copy paste virtual box template"
+# 	echo "################################################################"
+# 	tput sgr0
+# 	echo	
 
-	[ -d $HOME"/VirtualBox VMs" ] || mkdir -p $HOME"/VirtualBox VMs"
-	sudo cp -rf settings/virtualbox-template/* ~/VirtualBox\ VMs/
-	cd ~/VirtualBox\ VMs/
-	tar -xzf template.tar.gz
-	rm -f template.tar.gz	
+# 	[ -d $HOME"/VirtualBox VMs" ] || mkdir -p $HOME"/VirtualBox VMs"
+# 	sudo cp -rf settings/virtualbox-template/* ~/VirtualBox\ VMs/
+# 	cd ~/VirtualBox\ VMs/
+# 	tar -xzf template.tar.gz
+# 	rm -f template.tar.gz	
 
-else
+# else
 
-	echo
-	tput setaf 2
-	echo "################################################################"
-	echo "### You are on a virtual machine - skipping VirtualBox"
-	echo "################################################################"
-	tput sgr0
-	echo
+# 	echo
+# 	tput setaf 2
+# 	echo "################################################################"
+# 	echo "### You are on a virtual machine - skipping VirtualBox"
+# 	echo "################################################################"
+# 	tput sgr0
+# 	echo
 
-fi
+# fi
 
 echo
 tput setaf 2

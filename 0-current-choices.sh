@@ -49,7 +49,7 @@ echo
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 cd $installed_dir/Personal
 
-# sh 900-install-personal-settings-folders*
+sh 900-install-personal-settings-folders*
 # sh 905-install-personal-settings-bookmarks*
 #sh 915-install-personal-settings-screenshot-to-jpg*
 # sh 930-autostart-applications*
