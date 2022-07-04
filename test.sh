@@ -23,4 +23,14 @@ echo
 echo
 echo "Installing dotfiles repo"
 echo
+
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
+rsync --arv --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+
+if [-d $HOME"/.config"];
+then
+    echo "getting in the if statement"
+fi
+
+# [ -d $HOME"/.bin" ] || mkdir -p $HOME"/.bin"

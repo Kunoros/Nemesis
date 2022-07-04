@@ -42,8 +42,8 @@ echo
 echo
 echo "Installing dotfiles repo"
 echo
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git tmpdotfiles
-rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
+rsync --arv --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 # git clone --separate-git-dir=$HOME/
 # echo
