@@ -24,7 +24,7 @@ echo "################################################################"
 tput sgr0
 echo
 
-#sudo pacman -S --noconfirm --needed ttf-wps-fonts
+sudo pacman -S --noconfirm --needed ttf-wps-fonts
 #sudo pacman -S --noconfirm --needed wps-office
 #sudo pacman -S --noconfirm --needed wps-office-mime
 
@@ -33,9 +33,9 @@ sudo pacman -S --noconfirm --needed aic94xx-firmware
 # sudo pacman -S --noconfirm --needed alacritty
 # sudo pacman -S --noconfirm --needed alacritty-themes
 sudo pacman -S --noconfirm --needed arandr
-# sudo pacman -S --noconfirm --needed arc-darkest-theme-git
-# sudo pacman -S --noconfirm --needed arc-gtk-theme
-# sudo pacman -S --noconfirm --needed archiso
+sudo pacman -S --noconfirm --needed arc-darkest-theme-git
+sudo pacman -S --noconfirm --needed arc-gtk-theme
+sudo pacman -S --noconfirm --needed archiso
 sudo pacman -S --noconfirm --needed asciinema
 sudo pacman -S --noconfirm --needed avahi
 sudo pacman -S --noconfirm --needed awesome-terminal-fonts
@@ -74,7 +74,7 @@ sudo pacman -S --noconfirm --needed grub-customizer
 sudo pacman -S --noconfirm --needed gtop
 sudo pacman -S --noconfirm --needed gvfs-smb
 sudo pacman -S --noconfirm --needed hardcode-fixer-git
-# sudo pacman -S --noconfirm --needed hardinfo-gtk3
+sudo pacman -S --noconfirm --needed hardinfo-gtk3
 sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed hw-probe
@@ -82,7 +82,7 @@ sudo pacman -S --noconfirm --needed inkscape
 # sudo pacman -S --noconfirm --needed insync
 sudo pacman -S --noconfirm --needed kitty
 sudo pacman -S --noconfirm --needed kvantum
-# sudo pacman -S --noconfirm --needed linux-firmware-qlogic
+sudo pacman -S --noconfirm --needed linux-firmware-qlogic
 sudo pacman -S --noconfirm --needed logrotate
 sudo pacman -S --noconfirm --needed lolcat
 sudo pacman -S --noconfirm --needed lshw
@@ -108,7 +108,6 @@ sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed pv
-# sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed rate-mirrors-bin
 sudo pacman -S --noconfirm --needed ripgrep
 sudo pacman -S --noconfirm --needed rsync
@@ -118,11 +117,9 @@ sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed speedtest-cli-git
 sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
-# sudo pacman -S --noconfirm --needed sublime-text-4
 sudo pacman -S --noconfirm --needed surfn-icons-git
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed system-config-printer
-# sudo pacman -S --noconfirm --needed telegram-desktop
 sudo pacman -S --noconfirm --needed the_platinum_searcher-bin
 sudo pacman -S --noconfirm --needed the_silver_searcher
 sudo pacman -S --noconfirm --needed time
@@ -136,11 +133,9 @@ sudo pacman -S --noconfirm --needed ttf-liberation
 sudo pacman -S --noconfirm --needed ttf-roboto
 sudo pacman -S --noconfirm --needed ttf-roboto-mono
 sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
+sudo pacman -S --noconfirm --needed thunar
 sudo pacman -S --noconfirm --needed upd72020x-fw
 sudo pacman -S --noconfirm --needed variety
-# sudo pacman -S --noconfirm --needed vivaldi
-# sudo pacman -S --noconfirm --needed vivaldi-ffmpeg-codecs
-# sudo pacman -S --noconfirm --needed vivaldi-widevine
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed wd719x-firmware
 sudo pacman -S --noconfirm --needed wget

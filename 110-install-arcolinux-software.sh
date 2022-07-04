@@ -48,14 +48,16 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
 fi
 
 sudo pacman -S --noconfirm --needed appstream
-# sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
+sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
 sudo pacman -S --noconfirm --needed arcolinux-hblock-git
 sudo pacman -S --noconfirm --needed archlinux-logout-git
 sudo pacman -S --noconfirm --needed arcolinux-pamac-all
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
-# sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
+sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
+sudo pacman -S --noconfirm --needed arcolinux-desktop-trasher-git
 
 sudo pacman -S --noconfirm --needed visual-studio-code-bin
+sudo pacman -S --noconfirm --needed brave-bin
 
 ###############################################################################
 

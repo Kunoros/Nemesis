@@ -33,25 +33,22 @@ echo
 [ -d $HOME"/.themes" ] || mkdir -p $HOME"/.themes"
 [ -d $HOME"/.local/share/icons" ] || mkdir -p $HOME"/.local/share/icons"
 [ -d $HOME"/.local/share/themes" ] || mkdir -p $HOME"/.local/share/themes"
-[ -d "/personal" ] || sudo mkdir -p "/personal"
+# [ -d "/personal" ] || sudo mkdir -p "/personal"
 [ -d $HOME"/.config" ] || mkdir -p $HOME"/.config"
 [ -d $HOME"/.config/fish" ] || mkdir -p $HOME"/.config/fish"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
-[ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
+# [ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
 [ -d $HOME"/Insync" ] || mkdir -p $HOME"/Share"
 echo
 echo "Installing dotfiles repo"
 echo
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
-rsync --arv --exclude '.git' tmpdotfiles/ $HOME/
+rsync --av --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 # git clone --separate-git-dir=$HOME/
 # echo
-# echo "Installing all shell files"
+# echo "Installing fish shell files"
 # echo
-# cp $installed_dir/settings/shell-personal/.bashrc-personal ~
-# cp $installed_dir/settings/shell-personal/.zshrc ~
-# cp $installed_dir/settings/shell-personal/.zshrc-personal ~
 # cp $installed_dir/settings/fish/alias.fish ~/.config/fish/alias.fish
 # echo
 # echo "Installing personal settings of variety"
@@ -72,36 +69,6 @@ rm -r tmpdotfiles
 # [ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
 # cp  settings/thunar/uca.xml $HOME/.config/Thunar
 # echo
-
-# result=$(systemd-detect-virt)
-
-# if [ $result = "none" ];then
-
-# 	echo
-# 	tput setaf 2
-# 	echo "################################################################"
-# 	echo "####### Copy paste virtual box template"
-# 	echo "################################################################"
-# 	tput sgr0
-# 	echo	
-
-# 	[ -d $HOME"/VirtualBox VMs" ] || mkdir -p $HOME"/VirtualBox VMs"
-# 	sudo cp -rf settings/virtualbox-template/* ~/VirtualBox\ VMs/
-# 	cd ~/VirtualBox\ VMs/
-# 	tar -xzf template.tar.gz
-# 	rm -f template.tar.gz	
-
-# else
-
-# 	echo
-# 	tput setaf 2
-# 	echo "################################################################"
-# 	echo "### You are on a virtual machine - skipping VirtualBox"
-# 	echo "################################################################"
-# 	tput sgr0
-# 	echo
-
-# fi
 
 echo
 tput setaf 2
