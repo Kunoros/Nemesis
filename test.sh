@@ -24,13 +24,24 @@ echo
 echo "Installing dotfiles repo"
 echo
 
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
-rsync --av --exclude '.git' tmpdotfiles/ $HOME/
-rm -r tmpdotfiles
-
-if [$HOME"/.config"];
+if [ -d $HOME"/.config" ]
 then
-    echo "getting in the if statement"
+    echo "The directory exists"
+    echo "Delete current .config"
+    rm -rf $HOME/.dotfiles
+
+else
+    echo "No, it does not exists"
 fi
 
-[ -d $HOME"/.config" ] || echo "getting in the second if statement"
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
+rsync -av --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+
+# [ -d $HOME"/.config" ] && echo "The Folder Exists" || echo "Folder Does Not Exist"
+# echo $?
+
+# if [$HOME"/.config"];
+# then
+    # echo "getting in the if statement"
+# fi

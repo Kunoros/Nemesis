@@ -42,9 +42,21 @@ echo
 echo
 echo "Installing dotfiles repo"
 echo
+
+if [ -d $HOME"/.config" ]
+then
+    echo "The directory exists"
+    echo "Delete current .config"
+    rm -rf $HOME/.dotfiles
+
+else
+    echo "No, it does not exists"
+fi
+
 git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
-rsync --av --exclude '.git' tmpdotfiles/ $HOME/
+rsync -av --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
+
 # git clone --separate-git-dir=$HOME/
 # echo
 # echo "Installing fish shell files"

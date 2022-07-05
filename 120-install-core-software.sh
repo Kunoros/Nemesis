@@ -110,6 +110,7 @@ sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed pv
 sudo pacman -S --noconfirm --needed rate-mirrors-bin
 sudo pacman -S --noconfirm --needed ripgrep
+sudo pacman -S --noconfirm --needed rofi
 sudo pacman -S --noconfirm --needed rsync
 sudo pacman -S --noconfirm --needed scrot
 sudo pacman -S --noconfirm --needed simplescreenrecorder
@@ -162,6 +163,7 @@ sudo pacman -S --noconfirm --needed gsfonts
 sudo pacman -S --noconfirm --needed gutenprint
 sudo pacman -S --noconfirm --needed gtk3-print-backends
 sudo pacman -S --noconfirm --needed libcups
+sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed system-config-printer
 sudo pacman -S --noconfirm --needed sane
 sudo pacman -S --noconfirm --needed simple-scan
