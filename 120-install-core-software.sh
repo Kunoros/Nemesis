@@ -30,8 +30,11 @@ sudo pacman -S --noconfirm --needed ttf-wps-fonts
 
 sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
-# sudo pacman -S --noconfirm --needed alacritty
-# sudo pacman -S --noconfirm --needed alacritty-themes
+sudo pacman -S --noconfirm --needed alacritty
+sudo pacman -S --noconfirm --needed alsa-firmware
+sudo pacman -S --noconfirm --needed alsa-lib
+sudo pacman -S --noconfirm --needed alsa-plugins
+sudo pacman -S --noconfirm --needed alsa-utils
 sudo pacman -S --noconfirm --needed arandr
 sudo pacman -S --noconfirm --needed arc-darkest-theme-git
 sudo pacman -S --noconfirm --needed arc-gtk-theme
@@ -178,6 +181,32 @@ sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed unace
 sudo pacman -S --noconfirm --needed unrar
 sudo pacman -S --noconfirm --needed unzip
+
+sudo pacman -S --noconfirm --needed cmatrix
+sudo pacman -S --noconfirm --needed gpick
+sudo pacman -S --noconfirm --needed laptop-detect
+sudo pacman -S --noconfirm --needed nfs-utils 
+sudo pacman -S --noconfirm --needed notion-app
+sudo pacman -S --noconfirm --needed noto-fonts
+sudo pacman -S --noconfirm --needed obsidian
+sudo pacman -S --noconfirm --needed playerctl
+sudo pacman -S --noconfirm --needed refind
+sudo pacman -S --noconfirm --needed tree
+sudo pacman -S --noconfirm --needed ttf-fira-code
+sudo pacman -S --noconfirm --needed ttf-liberation
+sudo pacman -S --noconfirm --needed ttf-ms-fonts
+sudo pacman -S --noconfirm --needed ttf-nerd-fonts-symbols
+sudo pacman -S --noconfirm --needed ttf-roboto
+sudo pacman -S --noconfirm --needed vim
+
+sudo pacman -S --noconfirm --needed composer
+sudo pacman -S --noconfirm --needed docker
+sudo pacman -S --noconfirm --needed docker-compose
+sudo pacman -S --noconfirm --needed php
+sudo pacman -S --noconfirm --needed python-pip
+sudo pacman -S --noconfirm --needed python-pyparted
+sudo pacman -S --noconfirm --needed python-pywal
+sudo pacman -S --noconfirm --needed reflector
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
