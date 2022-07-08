@@ -66,6 +66,9 @@ sh 900-install-personal-settings-folders*
 # sh 980-garuda*
 # sh 999-skel*
 
+# cd $installed_dir
+# sh 1000-ssh-key-gen
+
 tput setaf 3
 echo "################################################################"
 echo "End current choices"

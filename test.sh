@@ -19,29 +19,30 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
 echo installed_dir
 
+
 echo
 echo
-echo "Installing dotfiles repo"
+echo "Generating SSH-key"
 echo
 
-if [ -d $HOME"/.config" ]
-then
-    echo "The directory exists"
-    echo "Delete current .config"
-    rm -rf $HOME/.dotfiles
+ssh-keygen -t ed25519 -C "patrick.laranjo.s@gmail.com"
 
-else
-    echo "No, it does not exists"
-fi
 
-git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
-rsync -av --exclude '.git' tmpdotfiles/ $HOME/
-rm -r tmpdotfiles
+# echo
+# echo
+# echo "Installing dotfiles repo"
+# echo
 
-# [ -d $HOME"/.config" ] && echo "The Folder Exists" || echo "Folder Does Not Exist"
-# echo $?
-
-# if [$HOME"/.config"];
+# if [ -d $HOME"/.config" ]
 # then
-    # echo "getting in the if statement"
+#     echo "The directory exists"
+#     echo "Delete current .config"
+#     rm -rf $HOME/.dotfiles
+
+# else
+#     echo "No, it does not exists"
 # fi
+
+# git clone --separate-git-dir=$HOME/.dotfiles https://github.com/kunoros/dotfiles.git tmpdotfiles
+# rsync -av --exclude '.git' tmpdotfiles/ $HOME/
+# rm -r tmpdotfiles
