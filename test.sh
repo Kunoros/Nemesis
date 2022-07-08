@@ -21,11 +21,16 @@ echo installed_dir
 
 
 echo
-echo
 echo "Generating SSH-key"
 echo
 
-ssh-keygen -t ed25519 -C "patrick.laranjo.s@gmail.com"
+echo "##########################"
+echo "Write your email"
+echo "##########################"
+
+read input
+
+ssh-keygen -t ed25519 -C "$input"
 
 
 # echo
