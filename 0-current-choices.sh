@@ -46,7 +46,7 @@ echo "################################################################"
 tput sgr0
 echo
 
-installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+installed_dir=$(dirname $(readlink -f $(basename $(pwd))))
 cd $installed_dir/Personal
 
 sh 900-install-personal-settings-folders*
