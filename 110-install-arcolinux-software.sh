@@ -16,7 +16,7 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
-installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+installed_dir=$(dirname $(readlink -f $(basename $(pwd))))
 
 echo
 tput setaf 2
@@ -35,7 +35,7 @@ if grep -q arcolinux_repo /etc/pacman.conf; then
   echo "################################################################"
   tput sgr0
   echo
-  else
+else
   echo
   tput setaf 2
   echo "################################################################"
@@ -75,10 +75,10 @@ sudo pacman -S --noconfirm --needed arcolinux-qt5-git
 sudo pacman -S --noconfirm --needed arcolinux-rofi-themes-git
 sudo pacman -S --noconfirm --needed arcolinux-sddm-simplicity-git
 sudo pacman -S --noconfirm --needed arcolinux-variety-autostart-git
-# sudo pacman -S --noconfirm --needed 
-# sudo pacman -S --noconfirm --needed 
-# sudo pacman -S --noconfirm --needed 
-# sudo pacman -S --noconfirm --needed 
+sudo pacman -S --noconfirm --needed arcolinux-fish-git
+# sudo pacman -S --noconfirm --needed
+# sudo pacman -S --noconfirm --needed
+# sudo pacman -S --noconfirm --needed
 
 ###############################################################################
 
