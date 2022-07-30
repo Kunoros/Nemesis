@@ -185,7 +185,7 @@ sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed cmatrix
 sudo pacman -S --noconfirm --needed gpick
 sudo pacman -S --noconfirm --needed laptop-detect
-sudo pacman -S --noconfirm --needed nfs-utils 
+sudo pacman -S --noconfirm --needed nfs-utils
 sudo pacman -S --noconfirm --needed notion-app
 sudo pacman -S --noconfirm --needed noto-fonts
 sudo pacman -S --noconfirm --needed obsidian
@@ -208,12 +208,13 @@ sudo pacman -S --noconfirm --needed python-pyparted
 sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed reflector
 
+sudo pacman -S --noconfirm --needed redshift
+
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
 fi
 
 ###############################################################################################
-
 
 # when on Arch Linux
 

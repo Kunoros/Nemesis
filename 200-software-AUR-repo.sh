@@ -19,7 +19,7 @@
 # software from AUR (Arch User Repositories)
 # https://aur.archlinux.org/packages/
 
-installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+installed_dir=$(dirname $(readlink -f $(basename $(pwd))))
 
 echo
 tput setaf 2
@@ -31,7 +31,7 @@ echo
 
 result=$(systemd-detect-virt)
 
-if [ $result = "none" ];then
+if [ $result = "none" ]; then
 
 	echo
 	tput setaf 2
@@ -39,12 +39,11 @@ if [ $result = "none" ];then
 	echo "####### Installing qemu"
 	echo "################################################################"
 	tput sgr0
-	echo	
+	echo
 
 	sh AUR/install-qemu-v1.sh
 
 else
-
 
 	echo
 	tput setaf 2
@@ -68,6 +67,12 @@ echo "### Installing Pipewire"
 echo "################################################################"
 
 sh AUR/install-pipewire.sh
+
+echo "################################################################"
+echo "### Installing doomemacs"
+echo "################################################################"
+
+sh AUR/install-doomemacs.sh
 
 echo
 tput setaf 2
