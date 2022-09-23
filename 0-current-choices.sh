@@ -31,12 +31,8 @@ sudo pacman -Sy
 sh 110-install-arcolinux-software*
 # sh 100-install-nemesis-software*
 sh 120-install-core-software*
-#sh 130-install-leftwm*
 
 sh 200-software-AUR-repo*
-#sh 300-sardi-extra-icons-AUR-repo*
-#sh 310-sardi-mint-y-icons-AUR-repo*
-#sh 320-surfn-mint-y-icons-git-AUR-repo*
 
 echo
 tput setaf 2

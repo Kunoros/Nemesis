@@ -16,10 +16,23 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
-sudo pacman -S --noconfirm --needed xorg-xrandr
 
-xrandr -r 144
+echo
+echo "Generating SSH-key"
+echo
 
-# xrandr --output "HDMI-A-0" --mode 1920x1080 --output "DisplayPort-1" --mode 1920x1080
+echo "##########################"
+echo "Write your email"
+echo "##########################"
 
-xrandr --output "HDMI-A-0" --output "DisplayPort-1" --mode 1920x1080 --left-of "DisplayPort-1"
+read input
+
+ssh-keygen -t ed25519 -C "$input"
+
+echo "##########################"
+echo "Copy your public key to your git accounts"
+echo "##########################"
+
+
+
+
