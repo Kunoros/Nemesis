@@ -212,6 +212,7 @@ sudo pacman -S --noconfirm --needed redshift
 
 sudo pacman -S --noconfirm --needed rofi-emoji
 sudo pacman -S --noconfirm --needed noto-fonts-emoji
+sudo pacman -S --noconfirm --needed xclip
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct

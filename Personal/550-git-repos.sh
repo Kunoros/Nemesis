@@ -16,23 +16,32 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
+echo "##########################"
+echo "Be fore using this script make sure you have added you public ssh to your git profile."
+echo "##########################"
 
 echo
-echo "Generating SSH-key"
+echo "Setting up dotfiles reposetory using ssh"
 echo
 
-echo "##########################"
-echo "Write your email"
-echo "##########################"
+if [ -d $HOME"/.config" ]; then
+    echo "The directory exists"
+    echo "Delete current .dotfiles"
+    rm -rf $HOME/.dotfiles
 
-read input
+else
+    echo "No, it does not exists"
+fi
 
-ssh-keygen -t ed25519 -C "$input"
+git clone --separate-git-dir=$HOME/.dotfiles git@github.com:Kunoros/.dotfiles.git tmpdotfiles
+rsync -av --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
 
-echo "##########################"
-echo "Copy your public key to your git accounts"
-echo "##########################"
+echo
+echo "Setting up nemesis reposetory using ssh"
+echo
 
+cd /$HOME/DATA/
+git clone git@github.com:Kunoros/Nemesis.git
 
-
-
+git clone git@github.com:Kunoros/archinstall.git
