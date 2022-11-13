@@ -17,11 +17,9 @@
 ##################################################################################################################
 
 # required dependencies
-pacman -S git emacs ripgrep
-# optional dependencies
-pacman -S fd
+sudo pacman -S --noconfirm --needed emacs
 
-git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
 doom install

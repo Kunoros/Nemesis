@@ -66,13 +66,13 @@ echo "################################################################"
 echo "### Installing Pipewire"
 echo "################################################################"
 
-sh AUR/install-pipewire.sh
+sh AUR/install-pipewire-v1.sh
 
 echo "################################################################"
 echo "### Installing doomemacs"
 echo "################################################################"
 
-sh AUR/install-doomemacs.sh
+sh AUR/install-doomemacs-v1.sh
 
 echo
 tput setaf 2
