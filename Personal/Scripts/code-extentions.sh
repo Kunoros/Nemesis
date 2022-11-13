@@ -1,0 +1,26 @@
+#!/bin/bash
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension steoates.autoimport
+code --install-extension aaron-bond.better-comments
+code --install-extension formulahendry.code-runner
+code --install-extension equinusocio.vsc-community-material-theme
+code --install-extension pranaygp.vscode-css-peek
+code --install-extension mikestead.dotenv
+code --install-extension editorconfig.editorconfig
+code --install-extension mhutchie.git-graph
+code --install-extension hwencc.html-tag-wrapper
+code --install-extension wix.vscode-import-cost
+code --install-extension visualstudioexptteam.vscodeintel
+code --install-extension visualstudioexptteam.intellicode-api-usage-examples
+code --install-extension zignd.html-css-class-completion
+code --install-extension ms-python.isort
+code --install-extension xabikos.javascriptsnippets
+code --install-extension ms-toolsai.jupyter
+code --install-extension ritwickdey.liveserver
+code --install-extension pkief.material-icon-theme
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-python.python
+code --install-extension albert.tabout
