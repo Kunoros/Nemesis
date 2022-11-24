@@ -215,6 +215,9 @@ sudo pacman -S --noconfirm --needed noto-fonts-emoji
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed emacs
 
+sudo pacman -S --noconfirm --needed ttf-nerd-fonts-symbols-common
+sudo pacman -S --noconfirm --needed starship
+
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
