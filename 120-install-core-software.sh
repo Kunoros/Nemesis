@@ -79,7 +79,8 @@ sudo pacman -S --noconfirm --needed gvfs-smb
 sudo pacman -S --noconfirm --needed hardcode-fixer-git
 sudo pacman -S --noconfirm --needed hardinfo-gtk3
 sudo pacman -S --noconfirm --needed hddtemp
-sudo pacman -S --noconfirm --needed htop
+# sudo pacman -S --noconfirm --needed htop
+sudo pacman -S --noconfirm --needed btop
 sudo pacman -S --noconfirm --needed hw-probe
 sudo pacman -S --noconfirm --needed inkscape
 # sudo pacman -S --noconfirm --needed insync
