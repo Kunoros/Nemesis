@@ -35,6 +35,7 @@ echo
 [ -d $HOME"/Projects" ] || mkdir -p $HOME"/Projects"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
 [ -d $HOME"/Share" ] || mkdir -p $HOME"/Share"
+[ -d $HOME"/cheat-sheets" ] || mkdir -p $HOME"/cheat-sheets"
 echo
 echo "Installing dotfiles repo"
 echo

@@ -46,6 +46,7 @@ installed_dir=$(dirname $(readlink -f $(basename $(pwd))))
 cd $installed_dir/Personal
 
 sh 900-install-personal-settings-folders*
+sh 910-install-cheat-sheets-repo*
 
 
 # cd $installed_dir

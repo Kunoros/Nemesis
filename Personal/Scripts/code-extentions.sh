@@ -24,3 +24,5 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-python.python
 code --install-extension albert.tabout
+code --install-extension vscodevim.vim
+code --install-extension patbenatar.advanced-new-file
