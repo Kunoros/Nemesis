@@ -220,6 +220,7 @@ sudo pacman -S --noconfirm --needed ttf-nerd-fonts-symbols-common
 sudo pacman -S --noconfirm --needed starship
 sudo pacman -S --noconfirm --needed neovim
 sudo pacman -S --noconfirm --needed kdeconnect
+sudo pacman -S --noconfirm --needed exa
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
