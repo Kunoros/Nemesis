@@ -221,6 +221,9 @@ sudo pacman -S --noconfirm --needed starship
 sudo pacman -S --noconfirm --needed neovim
 sudo pacman -S --noconfirm --needed kdeconnect
 sudo pacman -S --noconfirm --needed exa
+sudo pacman -S --noconfirm --needed xsel
+sudo pacman -S --noconfirm --needed rust
+sudo pacman -S --noconfirm --needed lazygit
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct

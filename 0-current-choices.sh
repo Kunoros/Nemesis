@@ -47,7 +47,7 @@ cd $installed_dir/Personal
 
 sh 900-install-personal-settings-folders*
 sh 910-install-cheat-sheets-repo*
-
+sh 950-install-neovim*
 
 # cd $installed_dir
 # sh 1000-ssh-key-gen
