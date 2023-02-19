@@ -49,6 +49,7 @@ sh 900-install-personal-settings-folders*
 sh 910-install-cheat-sheets-repo*
 sh 950-install-neovim*
 sh 960-setup-env-variable*
+sh 970-setup-tmux-tmp*
 # cd $installed_dir
 # sh 1000-ssh-key-gen
 
