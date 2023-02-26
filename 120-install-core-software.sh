@@ -226,6 +226,7 @@ sudo pacman -S --noconfirm --needed rust
 sudo pacman -S --noconfirm --needed lazygit
 sudo pacman -S --noconfirm --needed tmux
 sudo pacman -S --noconfirm --needed zig
+sudo pacman -S --noconfirm --needed picom
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
   sudo pacman -S --noconfirm --needed qt5ct
