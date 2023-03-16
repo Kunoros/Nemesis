@@ -43,7 +43,7 @@ sudo pacman -S --noconfirm --needed asciinema
 sudo pacman -S --noconfirm --needed avahi
 sudo pacman -S --noconfirm --needed awesome-terminal-fonts
 # sudo pacman -S --noconfirm --needed ayu-theme
-sudo pacman -S --noconfirm --needed baobab
+# sudo pacman -S --noconfirm --needed baobab
 # sudo pacman -S --noconfirm --needed base16-alacritty-git
 sudo pacman -S --noconfirm --needed bash-completion
 sudo pacman -S --noconfirm --needed bat
@@ -69,12 +69,12 @@ sudo pacman -S --noconfirm --needed font-manager
 sudo pacman -S --noconfirm --needed galculator
 sudo pacman -S --noconfirm --needed gimp
 sudo pacman -S --noconfirm --needed git
-sudo pacman -S --noconfirm --needed gitahead-bin
+# sudo pacman -S --noconfirm --needed gitahead-bin
 # sudo pacman -S --noconfirm --needed gitfiend
 sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed gparted
 sudo pacman -S --noconfirm --needed grub-customizer
-sudo pacman -S --noconfirm --needed gtop
+# sudo pacman -S --noconfirm --needed gtop
 sudo pacman -S --noconfirm --needed gvfs-smb
 sudo pacman -S --noconfirm --needed hardcode-fixer-git
 sudo pacman -S --noconfirm --needed hardinfo-gtk3
@@ -209,7 +209,7 @@ sudo pacman -S --noconfirm --needed python-pyparted
 sudo pacman -S --noconfirm --needed python-pywal
 sudo pacman -S --noconfirm --needed reflector
 
-sudo pacman -S --noconfirm --needed redshift
+# sudo pacman -S --noconfirm --needed redshift
 
 sudo pacman -S --noconfirm --needed rofi-emoji
 sudo pacman -S --noconfirm --needed noto-fonts-emoji
@@ -228,9 +228,9 @@ sudo pacman -S --noconfirm --needed tmux
 sudo pacman -S --noconfirm --needed zig
 sudo pacman -S --noconfirm --needed picom
 
-if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
-  sudo pacman -S --noconfirm --needed qt5ct
-fi
+# if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
+#   sudo pacman -S --noconfirm --needed qt5ct
+# fi
 
 ###############################################################################################
 
@@ -256,26 +256,26 @@ if grep -q "Arch Linux" /etc/os-release; then
 fi
 
 # when on xfce
-
-if [ -f /usr/share/xsessions/xfce.desktop ]; then
-
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "################### Installing software for Xfce"
-  echo "################################################################"
-  tput sgr0
-  echo
-
-  sudo pacman -S --noconfirm --needed arcolinux-kvantum-theme-arc-git
-  sudo pacman -S --noconfirm --needed menulibre
-  sudo pacman -S --noconfirm --needed mugshot
-  sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
-  sudo pacman -S --noconfirm --needed sardi-icons
-  sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
-  sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
-
-fi
+#
+# if [ -f /usr/share/xsessions/xfce.desktop ]; then
+#
+#   echo
+#   tput setaf 2
+#   echo "################################################################"
+#   echo "################### Installing software for Xfce"
+#   echo "################################################################"
+#   tput sgr0
+#   echo
+#
+#   sudo pacman -S --noconfirm --needed arcolinux-kvantum-theme-arc-git
+#   sudo pacman -S --noconfirm --needed menulibre
+#   sudo pacman -S --noconfirm --needed mugshot
+#   sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
+#   sudo pacman -S --noconfirm --needed sardi-icons
+#   sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
+#   sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
+#
+# fi
 
 echo
 tput setaf 2

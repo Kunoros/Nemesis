@@ -48,34 +48,34 @@ else
 fi
 
 sudo pacman -S --noconfirm --needed appstream
-sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
-sudo pacman -S --noconfirm --needed arcolinux-hblock-git
+# sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
+# sudo pacman -S --noconfirm --needed arcolinux-hblock-git
 sudo pacman -S --noconfirm --needed archlinux-logout-git
 sudo pacman -S --noconfirm --needed arcolinux-pamac-all
 sudo pacman -S --noconfirm --needed archlinux-tweak-tool-git
 sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
-sudo pacman -S --noconfirm --needed arcolinux-desktop-trasher-git
+# sudo pacman -S --noconfirm --needed arcolinux-desktop-trasher-git
 
 sudo pacman -S --noconfirm --needed visual-studio-code-bin
 sudo pacman -S --noconfirm --needed brave-bin
 
 #arcolinux_repo_3party
-sudo pacman -S --noconfirm --needed alacritty-themes
-sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-git
-sudo pacman -S --noconfirm --needed arcolinux-candy-beauty-git
-sudo pacman -S --noconfirm --needed config-all-desktops-git
-sudo pacman -S --noconfirm --needed arcolinux-fonts-git
-sudo pacman -S --noconfirm --needed arcolinux-grub-theme-vimix-git
-sudo pacman -S --noconfirm --needed arcolinux-gtk3-sardi-arc-git
-sudo pacman -S --noconfirm --needed arcolinux-meta-log
-sudo pacman -S --noconfirm --needed arcolinux-meta-logout
-sudo pacman -S --noconfirm --needed arcolinux-meta-steam-amd
-sudo pacman -S --noconfirm --needed arcolinux-paru-git
-sudo pacman -S --noconfirm --needed arcolinux-qt5-git
-sudo pacman -S --noconfirm --needed arcolinux-rofi-themes-git
-sudo pacman -S --noconfirm --needed arcolinux-sddm-simplicity-git
-sudo pacman -S --noconfirm --needed arcolinux-variety-autostart-git
-sudo pacman -S --noconfirm --needed arcolinux-fish-git
+# sudo pacman -S --noconfirm --needed alacritty-themes
+# sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-git
+# sudo pacman -S --noconfirm --needed arcolinux-candy-beauty-git
+# sudo pacman -S --noconfirm --needed config-all-desktops-git
+# sudo pacman -S --noconfirm --needed arcolinux-fonts-git
+# sudo pacman -S --noconfirm --needed arcolinux-grub-theme-vimix-git
+# sudo pacman -S --noconfirm --needed arcolinux-gtk3-sardi-arc-git
+# sudo pacman -S --noconfirm --needed arcolinux-meta-log
+# sudo pacman -S --noconfirm --needed arcolinux-meta-logout
+# sudo pacman -S --noconfirm --needed arcolinux-meta-steam-amd
+# sudo pacman -S --noconfirm --needed arcolinux-paru-git
+# sudo pacman -S --noconfirm --needed arcolinux-qt5-git
+# sudo pacman -S --noconfirm --needed arcolinux-rofi-themes-git
+# sudo pacman -S --noconfirm --needed arcolinux-sddm-simplicity-git
+# sudo pacman -S --noconfirm --needed arcolinux-variety-autostart-git
+# sudo pacman -S --noconfirm --needed arcolinux-fish-git
 # sudo pacman -S --noconfirm --needed
 # sudo pacman -S --noconfirm --needed
 # sudo pacman -S --noconfirm --needed
