@@ -47,7 +47,8 @@ else
   sudo pacman -Sy
 fi
 
-sudo pacman -S --noconfirm --needed appstream
+# sudo pacman -S --noconfirm --needed appstream
+sudo pacman -S --noconfirm --needed arcolinux-candy-beauty-git
 # sudo pacman -S --noconfirm --needed arcolinux-arc-themes-2021-sky-git
 # sudo pacman -S --noconfirm --needed arcolinux-hblock-git
 sudo pacman -S --noconfirm --needed archlinux-logout-git
@@ -79,26 +80,6 @@ sudo pacman -S --noconfirm --needed brave-bin
 # sudo pacman -S --noconfirm --needed
 # sudo pacman -S --noconfirm --needed
 # sudo pacman -S --noconfirm --needed
-
-###############################################################################
-
-# when on Plasma
-
-if [ -f /usr/bin/startplasma-x11 ]; then
-
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "################### Plasma related applications"
-  echo "################################################################"
-  tput sgr0
-  echo
-
-  sudo pacman -S --noconfirm --needed arcolinux-plasma-arc-dark-candy-git
-  sudo pacman -S --noconfirm --needed arcolinux-plasma-nordic-darker-candy-git
-  sudo pacman -S --noconfirm --needed surfn-plasma-dark-icons-git
-  sudo pacman -S --noconfirm --needed surfn-plasma-light-icons-git
-fi
 
 echo
 tput setaf 2

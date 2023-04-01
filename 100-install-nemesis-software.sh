@@ -53,13 +53,23 @@ echo "################################################################"
 tput sgr0
 echo
 
-sudo pacman -S --noconfirm --needed edu-candy-beauty-arc-git
-sudo pacman -S --noconfirm --needed edu-candy-beauty-arc-mint-grey-git
-sudo pacman -S --noconfirm --needed edu-candy-beauty-arc-mint-red-git
-sudo pacman -S --noconfirm --needed edu-candy-beauty-tela-git
-sudo pacman -S --noconfirm --needed edu-papirus-dark-tela-git
-sudo pacman -S --noconfirm --needed edu-papirus-dark-tela-grey-git
+# sudo pacman -S --noconfirm --needed edu-candy-beauty-arc-git
+# sudo pacman -S --noconfirm --needed edu-candy-beauty-arc-mint-grey-git
+# sudo pacman -S --noconfirm --needed edu-candy-beauty-arc-mint-red-git
+# sudo pacman -S --noconfirm --needed edu-candy-beauty-tela-git
+# sudo pacman -S --noconfirm --needed edu-papirus-dark-tela-git
+# sudo pacman -S --noconfirm --needed edu-papirus-dark-tela-grey-git
 
 #sudo pacman -S --noconfirm --needed edu-vimix-dark-tela-git
 
 # edu-skel-git and edu-system-git are defined in the personal files
+#
+echo "Nothing to do "
+
+echo
+tput setaf 6
+echo "################################################################"
+echo "################### Done"
+echo "################################################################"
+tput sgr0
+echo

@@ -16,10 +16,33 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
+installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+
+##################################################################################################################
+
+echo "Deleting current /etc/pacman.d/mirrorlist and replacing with"
+echo
+echo "Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch
+Server = https://mirror.rackspace.com/archlinux/\$repo/os/\$arch
+Server = https://mirrors.kernel.org/archlinux/\$repo/os/\$arch
+Server = https://mirror.osbeck.com/archlinux/\$repo/os/\$arch
+Server = http://mirror.osbeck.com/archlinux/\$repo/os/\$arch
+Server = https://geo.mirror.pkgbuild.com/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist
+echo
+tput setaf 2
+echo "########################################################################"
+echo "Arch Linux Servers have been written to /etc/pacman.d/mirrorlist"
+echo "Use nmirrorlist to inspect"
+echo "########################################################################"
+tput sgr0
+echo
+
+sudo pacman -Syy
+
 echo
 tput setaf 2
 echo "################################################################"
-echo "################### Software to install for ALL"
+echo "################### Core software"
 echo "################################################################"
 tput sgr0
 echo
@@ -62,7 +85,7 @@ sudo pacman -S --noconfirm --needed evince
 sudo pacman -S --noconfirm --needed expac
 sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
-# sudo pacman -S --noconfirm --needed firefox
+sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed flameshot-git
 sudo pacman -S --noconfirm --needed font-manager
@@ -73,13 +96,13 @@ sudo pacman -S --noconfirm --needed git
 # sudo pacman -S --noconfirm --needed gitfiend
 sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed gparted
-sudo pacman -S --noconfirm --needed grub-customizer
+# sudo pacman -S --noconfirm --needed grub-customizer
 # sudo pacman -S --noconfirm --needed gtop
 sudo pacman -S --noconfirm --needed gvfs-smb
 sudo pacman -S --noconfirm --needed hardcode-fixer-git
 sudo pacman -S --noconfirm --needed hardinfo-gtk3
 sudo pacman -S --noconfirm --needed hddtemp
-# sudo pacman -S --noconfirm --needed htop
+sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed btop
 sudo pacman -S --noconfirm --needed hw-probe
 sudo pacman -S --noconfirm --needed inkscape
@@ -173,9 +196,9 @@ sudo pacman -S --noconfirm --needed sane
 sudo pacman -S --noconfirm --needed simple-scan
 
 sudo pacman -S --noconfirm --needed rxvt-unicode
-# sudo pacman -S --noconfirm --needed urxvt-fullscreen
-# sudo pacman -S --noconfirm --needed urxvt-perls
-# sudo pacman -S --noconfirm --needed urxvt-resize-font-git
+sudo pacman -S --noconfirm --needed urxvt-fullscreen
+sudo pacman -S --noconfirm --needed urxvt-perls
+sudo pacman -S --noconfirm --needed urxvt-resize-font-git
 
 sudo pacman -S --noconfirm --needed gzip
 sudo pacman -S --noconfirm --needed p7zip
@@ -228,52 +251,26 @@ sudo pacman -S --noconfirm --needed tmux
 sudo pacman -S --noconfirm --needed zig
 sudo pacman -S --noconfirm --needed picom
 
-# if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
-#   sudo pacman -S --noconfirm --needed qt5ct
-# fi
-
 ###############################################################################################
 
 # when on Arch Linux
 
-if grep -q "Arch Linux" /etc/os-release; then
-  echo
-  tput setaf 2
-  echo "################################################################"
-  echo "############### Installing software for Arch Linux - Any desktop"
-  echo "################################################################"
-  tput sgr0
-  echo
-
-  echo
-  echo "################################################################"
-  echo "Getting latest /etc/nsswitch.conf from ArcoLinux"
-  echo "################################################################"
-  echo
-  sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
-  sudo wget https://raw.githubusercontent.com/arcolinux/arcolinuxl-iso/master/archiso/airootfs/etc/nsswitch.conf -O $workdir/etc/nsswitch.conf
-
-fi
-
-# when on xfce
-#
-# if [ -f /usr/share/xsessions/xfce.desktop ]; then
-#
+# if grep -q "Arch Linux" /etc/os-release; then
 #   echo
 #   tput setaf 2
 #   echo "################################################################"
-#   echo "################### Installing software for Xfce"
+#   echo "############### Installing software for Arch Linux - Any desktop"
 #   echo "################################################################"
 #   tput sgr0
 #   echo
 #
-#   sudo pacman -S --noconfirm --needed arcolinux-kvantum-theme-arc-git
-#   sudo pacman -S --noconfirm --needed menulibre
-#   sudo pacman -S --noconfirm --needed mugshot
-#   sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
-#   sudo pacman -S --noconfirm --needed sardi-icons
-#   sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
-#   sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
+#   echo
+#   echo "################################################################"
+#   echo "Getting latest /etc/nsswitch.conf from ArcoLinux"
+#   echo "################################################################"
+#   echo
+#   sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
+#   sudo wget https://raw.githubusercontent.com/arcolinux/arcolinuxl-iso/master/archiso/airootfs/etc/nsswitch.conf -O $workdir/etc/nsswitch.conf
 #
 # fi
 

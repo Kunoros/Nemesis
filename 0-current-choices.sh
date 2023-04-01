@@ -17,6 +17,12 @@
 ##################################################################################################################
 
 echo
+echo "Pacman parallel downloads if needed"
+FIND="#ParallelDownloads = 10"
+REPLACE="ParallelDownloads = 10"
+sudo sed -i "s/$FIND/$REPLACE/g" /etc/pacman.conf
+
+echo
 tput setaf 3
 echo "################################################################"
 echo "################### Start current choices"
@@ -28,7 +34,7 @@ sudo pacman -Sy
 
 # sh 400-remove-software*
 
-# sh 100-install-nemesis-software*
+sh 100-install-nemesis-software*
 sh 110-install-arcolinux-software*
 sh 120-install-core-software*
 
