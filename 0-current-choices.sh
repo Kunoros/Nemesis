@@ -59,6 +59,9 @@ sh 970-setup-tmux-tmp*
 # cd $installed_dir
 # sh 1000-ssh-key-gen
 
+#has to be last
+sh 980-arch.sh
+
 tput setaf 3
 echo "################################################################"
 echo "End current choices"
