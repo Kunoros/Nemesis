@@ -16,4 +16,4 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
-yay -S --noconfirm qtile-extras
+yay -S --noconfirm ttf-nerd-fonts-hack-complete-git
