@@ -284,6 +284,7 @@ sudo pacman -S --noconfirm --needed zig
 sudo pacman -S --noconfirm --needed nodejs
 sudo pacman -S --noconfirm --needed npm
 sudo pacman -S --noconfirm --needed base-devel
+sudo pacman -S --noconfirm --needed pass
 
 #Color scheme generation:
 sudo pacman -S --noconfirm --needed python-pywal
