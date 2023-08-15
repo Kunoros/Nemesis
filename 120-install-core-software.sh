@@ -16,7 +16,7 @@
 #tput setaf 8 = light blue
 ##################################################################################################################
 
-installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+installed_dir=$(dirname $(readlink -f $(basename $(pwd))))
 
 ##################################################################################################################
 
@@ -285,6 +285,7 @@ sudo pacman -S --noconfirm --needed nodejs
 sudo pacman -S --noconfirm --needed npm
 sudo pacman -S --noconfirm --needed base-devel
 sudo pacman -S --noconfirm --needed pass
+sudo pacman -S --noconfirm --needed syncthing
 
 #Color scheme generation:
 sudo pacman -S --noconfirm --needed python-pywal
@@ -311,13 +312,13 @@ if grep -q "Arch Linux" /etc/os-release; then
   tput sgr0
   echo
 
-	echo
-	echo "################################################################"
-	echo "Getting latest /etc/nsswitch.conf from ArcoLinux"
-	echo "################################################################"
-	echo
-	sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
-	sudo wget https://raw.githubusercontent.com/arcolinux/arcolinuxl-iso/master/archiso/airootfs/etc/nsswitch.conf -O $workdir/etc/nsswitch.conf
+  echo
+  echo "################################################################"
+  echo "Getting latest /etc/nsswitch.conf from ArcoLinux"
+  echo "################################################################"
+  echo
+  sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.bak
+  sudo wget https://raw.githubusercontent.com/arcolinux/arcolinuxl-iso/master/archiso/airootfs/etc/nsswitch.conf -O $workdir/etc/nsswitch.conf
 
 fi
 
